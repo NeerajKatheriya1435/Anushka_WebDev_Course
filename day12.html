@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main {
+            display: flex;
+            border: 2px solid green;
+            height: 90vh;
+            /* flex-direction: row-reverse; */
+
+            /* justify-content: center;
+            align-items: center; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: flex-end;
+            align-items: flex-end; */
+        }
+
+        .divText {
+            border: 2px solid red;
+            width: 500px;
+            height: 150px;
+            margin: 10px;
+            padding: 12px;
+        }
+
+        /* #main1 {
+            order: 2;
+        } */
+
+        #main2 {
+            /* flex-grow: 1; */
+            /* width: 800px;
+            flex-shrink: 1; */
+            /* order: 0; */
+            /* flex-basis: 200px; */
+            /* align-self: center; */
+            flex: 1 1 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="divText" id="main1">Box1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat,
+            perferendis.
+        </div>
+        <div class="divText" id="main2">Box2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat,
+            perferendis.
+        </div>
+        <div class="divText" id="main3">Box3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat,
+            perferendis.
+            perferendis.
+        </div>
+    </main>
+</body>
+
+</html>

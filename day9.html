@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            border: 2px solid green;
+            height: 100vh;
+        }
+
+        div {
+            height: 200px;
+            width: 500px;
+            border: 2px solid salmon;
+            margin: 12px;
+            padding: 5px;
+        }
+
+        #box2 {
+            float: right;
+            /* top: 0px;
+            right: 0px; */
+        }
+
+        #box3 {
+            clear: both;
+        }
+
+        .mainMy::before {
+            content: "";
+            /* background-image: url("https://www.shutterstock.com/image-photo/portrait-little-boy-studying-classroom-600nw-2491116325.jpg") no-repeat center/cover; */
+            background-color: aqua;
+            background: url("20250911_1228_Programming\ Language\ Banners_simple_compose_01k4vs241yepgbatmkc9q7j6ta.png") no-repeat center top/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.1;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="mainMy">
+        <div id="box1">Box1 lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae nobis
+            cupiditate sunt
+            cumque nam, harum iure voluptas. Totam minus fuga laboriosam voluptatum error quam necessitatibus culpa
+            perspiciatis, autem eius corporis quia. Exercitationem, voluptatibus!
+
+        </div>
+        <div id="box2">Box2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quidem qui, eligendi
+            voluptates magni
+            obcaecati fugiat quos exercitationem nihil quod asperiores ad distinctio quae in ipsam natus sit adipisci
+            explicabo labore esse quas consequuntur rerum fugit? Magnam facere incidunt eaque, ducimus omnis voluptatem
+            labore sed corrupti eius qui quis. Cumque nesciunt quod rem voluptatum reiciendis rerum?
+        </div>
+        <div id="box3">Box3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quidem qui, eligendi
+            voluptates magni
+            obcaecati fugiat quos exercitationem nihil quod asperiores ad distinctio quae in ipsam natus sit adipisci
+            explicabo labore esse quas consequuntur rerum fugit? Magnam facere incidunt eaque, ducimus omnis voluptatem
+            labore sed corrupti eius qui quis. Cumque nesciunt quod rem voluptatum reiciendis rerum?
+        </div>
+    </main>
+</body>
+
+</html>
