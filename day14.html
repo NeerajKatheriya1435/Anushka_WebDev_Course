@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .main {
+            border: 2px solid red;
+        } */
+
+        /* @keyframes meraBox {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 400px;
+                top: 0px;
+            }
+        } */
+
+        /* .box { */
+        /* border: 2px solid green;
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            padding: 10px;
+            font-size: 23px;
+            background-color: aqua;
+            position: relative; */
+        /* transition: all 2s ease-in-out; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation-name: meraBox;
+            animation-duration: 2s;
+            animation: ease-in;
+            animation-iteration-count: infinite;
+            animation: forwards; */
+        /* animation-fill-mode: forwards; */
+        /* } */
+
+        /* .box:hover {
+            background-color: rgb(173, 86, 144);
+            height: 400px;
+            width: 400px;
+            font-size: 45px;
+        } */
+        /* div div {
+            --var1: rgb(128, 113, 0);
+            background-color: var(--var1);
+        } */
+        :root {
+            --var1: 1245;
+        }
+
+        .head1 {
+
+            color: var(--var1, red);
+        }
+
+        .mypara1 {
+            background-color: var(--var1);
+        }
+
+        .head2 {
+            background-color: var(--var1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div>
+            <h1 class="head1">
+                This is my Heading 1
+            </h1>
+            <p class="mypara1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam atque quia quo omnis ipsam rem corporis
+                dignissimos ducimus. Est quod molestias laborum alias.
+            </p>
+        </div>
+        <div>
+            <h1 class="head2">
+                This is my Heading 2
+            </h1>
+            <p class="mypara2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam atque quia quo omnis ipsam rem corporis
+                dignissimos ducimus. Est quod molestias laborum alias.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
