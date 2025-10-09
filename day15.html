@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myBox {
+            border: 2px solid salmon;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            /* border: 2px solid green; */
+            position: relative;
+            border-radius: 50px;
+            background-color: antiquewhite;
+            animation: anushka 2s ease-out 0.5s infinite forwards;
+        }
+
+        @keyframes anushka {
+            /* from {
+                width: 200px;
+            }
+
+            to {
+                width: 800px;
+            } */
+
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 500px;
+                background-color: aqua;
+            }
+
+            75% {
+                top: 500px;
+                left: 500px;
+                background-color: blue;
+            }
+
+            100% {
+                top: 500px;
+                left: 0px;
+                background-color: coral;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="myBox">
+        <div class="box">
+            <!-- I am Box 1 -->
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: orange;
+            position: relative;
+            animation: moveCircle 3s linear infinite alternate;
+        }
+
+        @keyframes moveCircle {
+            0% {
+                left: 0;
+                background: orange;
+            }
+
+            50% {
+                left: 150px;
+                background: yellow;
+            }
+
+            100% {
+                left: 300px;
+                background: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+</body>
