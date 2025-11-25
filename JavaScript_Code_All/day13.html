@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body><!-- bfg -->
+    <h2>
+        <span id="para1">Hello I am para1</span>
+        <span>Hello I am para2</span>
+    </h2>
+    <h5>
+        <h1 id="myHead">
+            <!-- hello -->
+            <p>Hello I am para1</p>
+            <p>Hello I am para2</p>
+        </h1>
+        <h1 id="myHead">
+            <!-- hello -->
+            <p>Hello I am para1</p>
+            <p>Hello I am para2</p>
+        </h1>
+    </h5>
+    <h2>
+        <span id="para1">Hello I am para1</span>
+        <span>Hello I am para2</span>
+    </h2>
+    <script>
+        // document.getElementById("btn").addEventListener("click", () => {
+        //     let a = 45
+        //     let b = 89
+        //     console.log("Hell I am Clicked", (a + b))
+        // })
+        // let p1 = document.getElementById("myHead")
+        // console.log(p1.parentElement)
+        // console.log(p1.parentNode)
+        let p1 = document.body.childNodes[3].previousElementSibling
+        console.log(p1)
+    </script>
+</body>
+
+</html>
