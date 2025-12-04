@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+
+    <!-- <button id="btn" onclick="()=>hello()">Hello click me</button> -->
+    <script>
+        // let p1 = document.getElementById("btn")
+        // function hello() {
+        //     console.log("hello")
+        // }
+        // p1.addEventListener("click", hello)
+
+        // function getCheeze() {
+        //     console.log("Adding cheese on doe")
+        // }
+
+        // const readyPizza = () => {
+        //     console.log("Your pizza is ready to eat")
+        // }
+
+        // function greet(func1, func2) {
+        //     console.log("Start making pizza")
+        //     func1()
+        //     func2()
+        // }
+
+        // greet(getCheeze, readyPizza)
+
+        // function BakiPizza(cheese,){
+        //     console.log("Oven is ready")
+        //     addDoe(capcicum,cheese)
+        // }
+        // setTimeout(() => {
+        //     console.log("1");
+        // }, 1000);
+        // setTimeout(() => {
+        //     console.log("2");
+        // }, 1000);
+        // setTimeout(() => {
+        //     console.log("3");
+        // }, 1000);
+
+        // setTimeout(() => {
+        //     console.log("1");
+        //     setTimeout(() => {
+        //         console.log("2");
+        //         setTimeout(() => {
+        //             console.log("3");
+        //         }, 1000);
+        //     }, 1000);
+        // }, 1000);
+
+        // const p1 = new Promise((resolve, reject) => {
+        //     let b1 = false;
+        //     console.log("Hello I am good")
+        //     // b1 = true
+        //     // resolve("Yes Code Succeffully Executed")
+        //     if (b1) {
+        //         resolve("Succesfully Resolved")
+        //     } else {
+        //         reject("Not Resolved")
+        //     }
+        // })
+
+        // console.log(p1)
+        // p1.then((data) => {
+        //     console.log(data)
+        // }).catch((error) => {
+        //     console.log("Promise Rejected", error)
+        // })
+
+        // new Promise(resolve => resolve(1))
+        //     .then(num => {
+        //         console.log(num);
+        //         return num + 1;
+        //     })
+        //     .then(num => {
+        //         console.log(num);
+        //         return num + 1;
+        //     })
+        //     .then(num => console.log(num));
+
+        // const p2 = new Promise(resolve => resolve(1));
+
+        // p2.then((data) => {
+        //     console.log(data)
+        //     return data + 1
+        // }).then((data) => {
+        //     console.log(data)
+        //     return data + 1
+        // }).then((data) => {
+        //     console.log(data)
+        //     return data + 1
+        // })
+
+        // console.log("Hello")
+
+        // function greet() {
+        //     console.log("Good Morning")
+        // }
+        // console.log("Bye Bye")
+        // greet()
+
+        // function delay(ms) {
+        //     return new Promise(resolve => setTimeout(resolve, ms));
+        // }
+
+        // console.log("I am Good")
+        // async function start() {
+        //     console.log("Waiting...");
+        //     await delay(2000)
+        //     console.log("Done!");
+        // }
+        // start();
+        // console.log("Hello")
+
+        // function devide(num1, num2) {
+        //     try {
+        //         if (num2 > 0 || num < 0)
+        //             console.log(num1 / num2)
+        //     } catch (error) {
+        //         console.log("Not divisible by zero")
+        //     }
+
+        // }
+
+        async function dataURL() {
+            try {
+                let res = await fetch("https://jsonplac3eholder.typicode.com/posts");
+                let data = res
+                console.log(data)
+            } catch (error) {
+                // console.log("Error Occured Not Found", error)
+                // throw new Error("Url is Wrong")
+            }
+            finally {
+                console.log("Roz ka kam hai mera")
+            }
+        }
+        dataURL()
+
+        // devide(4, 0)
+    </script>
+</body>
+
+</html>

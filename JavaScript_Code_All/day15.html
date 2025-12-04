@@ -7,15 +7,89 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="container">
 
-    <div class="div1">
+    <!-- <div class="div1">
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Services</a>
+    </div> -->
+
+    <div class="container1" id="mypara">
+        <p class="para1" id="par1">Para1</p>
+        <p class="para2">Para2</p>
     </div>
+    <div id="myDiv">
+        <button id="btn1" class="Shivam">MyButton1</button>
+        <button id="btn2" class="Shivam">MyButton2</button>
+    </div>
+
     <script>
-        console.log(document.links[0])
+        // console.log(document.links[0])
+        // let p1 = document.querySelector(".container")
+        // console.log(p1.matches("#mypara"))
+        // let p1 = document.querySelector(".para1")
+        // console.log(p1.closest(".container"))
+        // let p1 = document.querySelector("#mypara")
+        // let p2 = document.querySelector(".para1")
+        // console.log(p1.contains(p2))
+
+        // let btn = document.getElementById("btn")
+        // console.log(btn)
+        // btn.addEventListener("mouseleave", () => {
+        //     console.log("Clicked Button")
+        // })
+        // console.dir(document.getElementById("btn"))
+        // let p1 = document.getElementById("btn")
+        // p1.innerHTML = "<p>Hello I am Good</p>"
+        // p1.outerHTML = "<p>Hello I am Good</p>"
+        // p1.hidden = true
+        // console.log(p1.getAttribute("class"))
+        // console.log(p1.setAttribute("name", "nameValue"))
+        // console.log(p1.removeAttribute("id"))
+        // console.log(p1.hasAttribute("id"))
+
+        // let p1 = document.getElementById("myDiv")
+        // console.log(p1)
+        // let c1 = "This is my Haeding three"
+        // let c1 = document.getElementById("par1")
+        // p1.append(c1)
+        // p1.before(c1)
+        // p1.after(c1)
+
+        // let p1 = document.getElementById("myDiv")
+        // p1.insertAdjacentHTML("beforebegin", "<p>Before</p>");
+        // p1.insertAdjacentHTML("afterbegin", "<p>Before</p>");
+        // p1.insertAdjacentHTML("beforeend", "<p>Before</p>");
+        // p1.insertAdjacentHTML("afterend", "<p>Before</p>");
+        // p1.remove()
+        // p1.className = "box shubham neeraj"
+        // p1.classList.add("rupali")
+        // p1.classList.remove("rupali")
+        // p1.classList.remove("neeraj")
+        // p1.classList.toggle("neeraj")
+        // console.log(p1.classList.contains("neeraj"))
+        // function greet(name, callback) {
+        //     console.log("Hello " + name);
+        //     callback();
+        // }
+
+        // greet("Neeraj", () => {
+        //     console.log("Welcome!");
+        // });
+
+        new Promise(resolve => resolve(1))
+            .then(num => {
+                console.log(num);
+                return num + 1;
+            })
+            .then(num => {
+                console.log(num);
+                return num + 1;
+            })
+            .then(num => console.log(num));
+
+
     </script>
 </body>
 
