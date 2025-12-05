@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        class Animal {
+
+            // name = "animal"
+            constructor(name) {
+                console.log("first")
+                this.name = name
+            }
+
+            eat() {
+                console.log(`${this.name} is eating grass`)
+            }
+        }
+
+        class Goat extends Animal {
+
+            constructor(name, age) {
+                super(name)
+                this.age = age
+                console.log("Second")
+            }
+            giveMilk() {
+                console.log("Milk provided goat")
+                console.log(`${this.name} is eating grass age is: ${this.age}`)
+            }
+        }
+
+        // let g1 = new Goat();
+        // g1.eat()
+        // g1.giveMilk()
+
+        // let a1 = new Animal("Animal")
+        // a1.eat()
+        // a1.giveMilk()
+        // let a1 = new Animal("Animal")
+        // a1.eat()
+
+        let g1 = new Goat("Kokila", 45)
+        g1.eat()
+        g1.giveMilk()
+    </script>
+</body>
+
+</html>
